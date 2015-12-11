@@ -1,0 +1,17 @@
+# https://github.com/laurilehmijoki/s3_website needed for `npm run deploy`
+# oscar controls access to the default bucket so talk to him
+
+s3_id: <%= ENV['S3_ID'] %>
+s3_secret: <%= ENV['S3_SECRET'] %>
+s3_bucket: <%= ENV['S3_BUCKET'] || 'binary-vision-pattern-library' %>
+
+site: output
+
+max_age: 300
+
+gzip:
+  - .html
+  - .css
+  - .js
+
+s3_endpoint: eu-west-1

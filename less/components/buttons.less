@@ -1,0 +1,45 @@
+// Button
+//
+// This is some descriptive text about our button
+//
+// Markup: <button class="c-button {{modifier_class}}">Button</button>
+//
+// .c-button--green - Green variant
+// .c-button--blue - Blue variant
+// :hover - Highlight the button when hovered.
+// :disabled - Make the button change appearance to reflect it being disabled.
+// :active - "Press" the button down when clicked.
+//
+// Style guide: components.buttons
+.c-button {
+    color: #333;
+    background-color: white;
+    border: 1px solid #CCC;
+    padding: 5px 10px;
+
+    &--green {
+        color: white;
+        background-color: green;
+    }
+
+    &--blue {
+        color: white;
+        background-color: blue;
+    }
+
+    &:hover {
+        color: white;
+        background: black;
+    }
+
+    &:active {
+        color: white;
+        background: red;
+    }
+
+    &:disabled {
+        color: #666;
+        background-color: #CCC;
+        cursor: not-allowed;
+     }
+}

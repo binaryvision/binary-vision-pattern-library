@@ -1,0 +1,15 @@
+{
+  "source": "../less",
+
+  "css": [
+    "public/styleguide.css"
+  ],
+
+  "destination": "./output",
+
+  "title": "Binary Vision Pattern Library",
+
+  "template": "./template",
+
+  "homepage": "../styleguide/styleguide.md"
+}

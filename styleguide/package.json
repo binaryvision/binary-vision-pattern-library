@@ -1,0 +1,17 @@
+{
+  "name": "styleguide",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "less": "lessc styleguide.less output/public/styleguide.css",
+    "build": "kss-node --config styleguide.json && npm run less",
+    "serve": "browser-sync start --server output",
+    "start": "npm run build && npm run serve",
+    "deploy": "npm run build && s3_website push"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "kss": "^2.1.1",
+    "less": "^2.1.1"
+  }
+}
