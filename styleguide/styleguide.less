@@ -1,6 +1,32 @@
-@import "../less/main.less";
+.kss-modifier__example {
+    @import "../less/main.less";
+}
 
 // styleguide specific css goes here
 .kss-style pre {
     overflow: auto;
+}
+
+.kss-colours.kss-colours {
+    list-style: none;
+    padding: 0;
+}
+
+.kss-colours__black,
+.kss-colours__white {
+    border: 1px solid #CCC;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    vertical-align: middle;
+    width: 200px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.kss-colours__white {
+    color: black;
+    background-color: white;
 }
