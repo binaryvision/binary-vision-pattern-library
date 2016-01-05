@@ -1,3 +1,3 @@
 # Binary Vision Pattern Library
 
-This is a test of KSS-node
+This is an example style guide for demo purposes only

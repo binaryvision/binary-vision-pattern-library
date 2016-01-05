@@ -1,8 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
 .kss-modifier__example {
     @import "../less/main.less";
 }
 
 // styleguide specific css goes here
+
+#kss-node .kss-section {
+    max-width: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+.kss-title__ref {
+    margin-bottom: 10px;
+}
+
+.kss-nav__ref {
+    margin-right: 10px;
+}
+
+.kss-nav__name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.kss-style {
+    font-family: 'open sans', georgia, sans-serif;
+}
+
+.kss-header {
+    text-align: center;
+}
+
+.kss-doc-title > img {
+    margin-top: 5px;
+    border: 5px solid white;
+}
+
 .kss-style pre {
     overflow: auto;
 }
@@ -10,6 +47,35 @@
 .kss-colours.kss-colours {
     list-style: none;
     padding: 0;
+}
+
+#kss-node .kss-title__permalink {
+    margin-bottom: 12px;
+}
+
+.kss-nav__menu-child .kss-nav__ref,
+.kss-nav__menu-child .kss-nav__name {
+    font-size: .9em;
+}
+
+#kss-node .kss-nav__menu-child li:first-child {
+    padding-top: 0px;
+    margin-top: 0;
+    border-top: 0;
+}
+
+#kss-node ol.linenums {
+    padding-bottom: 0;
+}
+
+#kss-node .kss-nav__menu-child li:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#kss-node .kss-nav__menu-child li {
+    padding-left: 10px !important;
 }
 
 .kss-colours__black,

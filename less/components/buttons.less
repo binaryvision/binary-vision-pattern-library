@@ -2,7 +2,8 @@
 //
 // This is some descriptive text about our button
 //
-// Markup: <button class="c-button {{modifier_class}}">Button</button>
+// Markup:
+// <button class="c-button {{modifier_class}}">Button</button>
 //
 // .c-button--green - Green variant
 // .c-button--blue - Blue variant
@@ -12,10 +13,14 @@
 //
 // Style guide: components.buttons
 .c-button {
-    color: #333;
-    background-color: white;
-    border: 1px solid #CCC;
+    background: #666 linear-gradient(hsla(0,0%,100%,.2), transparent);
+    border-radius: .2em;
+    border: 2px solid rgba(0,0,0,.2);
     padding: 5px 10px;
+    text-shadow: 0 -.05em .05em #335166;
+    color: white;
+    box-shadow: 0 .05em .25em rgba(0,0,0,.5em);
+    cursor: pointer;
 
     &--green {
         color: white;
@@ -29,17 +34,19 @@
 
     &:hover {
         color: white;
-        background: black;
+        background-color: black;
     }
 
     &:active {
         color: white;
-        background: red;
+        background-color: red;
     }
 
     &:disabled {
-        color: #666;
-        background-color: #CCC;
+        color: #CCC;
+        background: #999;
+        text-shadow: none;
+        border-color: rgba(0,0,0,.1em);
         cursor: not-allowed;
      }
 }
