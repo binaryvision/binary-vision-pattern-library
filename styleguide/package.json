@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "scripts": {
     "less": "lessc styleguide.less output/public/styleguide.css",
-    "build": "kss-node --config styleguide.json && npm run less",
+    "build": "kss-node --config styleguide.json --helpers helpers && npm run less",
     "serve": "browser-sync start --server output --files 'output/*.html,output/public/*' --reload-delay 1000",
     "start": "npm run build && npm run serve",
     "watch": "ls *.less template/**/* ../less/**/* | entr npm run build",
@@ -13,6 +13,7 @@
   "devDependencies": {
     "browser-sync": "^2.10.0",
     "kss": "^2.1.1",
-    "less": "^2.1.1"
+    "less": "^2.1.1",
+    "twig": "^0.8.7"
   }
 }
